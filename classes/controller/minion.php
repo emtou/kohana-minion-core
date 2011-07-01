@@ -96,6 +96,12 @@ class Controller_Minion extends Controller
 		try 
 		{
 			$task = Minion_Task::factory($this->_task);
+			
+			// Aggregate optional dependency injector container to the task
+			if (isset($this->container))
+			{
+			    $task->container = $this->container;
+			}
 		}
 		catch(Exception $e)
 		{
