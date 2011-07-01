@@ -5,7 +5,7 @@
  *
  * @author Matt Button <matthew@sigswitch.com>
  */
-class Controller_Minion extends Kohana_Controller
+class Controller_Minion extends Controller
 {
 	/**
 	 * The task to be executed 
